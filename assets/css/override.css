@@ -50,6 +50,7 @@ h5 { font: 17.5px OpenSans-CondLight; color: #fff;}
 blockquote, .blockquote-reverse { border: none; padding: 20px 0px;}
 a { color: #02A892; cursor: default;}
 a:hover { text-decoration: none; color: #fff; cursor: default; }
+hr { border-color: #02A892;}
 .nolink:hover { text-decoration: none; color: #02A892; }
 .divider { background-image: url( "../img/hexagons.png"); background-repeat: repeat-x; height: 150px; margin-top: 30px; margin-bottom: 20px}
 .info-text { margin-top: 56px; line-height: 26px}
