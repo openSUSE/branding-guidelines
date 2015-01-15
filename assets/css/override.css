@@ -59,8 +59,8 @@ h5 { font: 17.5px OpenSans-CondLight; color: #fff;}
 .navbar-nav>li>a { color: #02A892; padding: 8px 10px; margin: 10px 0px 0px;}
 .navbar-nav>li>a:hover { color: #fff; background-color: #02A892 }
 blockquote, .blockquote-reverse { border: none; padding: 20px 0px;}
-a { color: #02A892; cursor: default;}
-a:hover { text-decoration: none; color: #fff; cursor: default; }
+a { color: #02A892;}
+a:hover { text-decoration: none; color: #fff; cursor: pointer; }
 hr { border-color: #02A892;}
 .nolink:hover { text-decoration: none; color: #02A892; }
 .divider { background-image: url( "../img/hexagons.png"); background-repeat: repeat-x; height: 150px; margin-top: 30px; margin-bottom: 20px}
@@ -68,11 +68,11 @@ hr { border-color: #02A892;}
 .main-img { margin-bottom: 40px; margin-right: 20px}
 .element { margin-bottom: 40px;}
 .font-lead { font: 13.5px OpenSans-CondLight; color: #fff; margin-top: 20px }
-.font-example { font-size: 38px; margin-top: 30px; margin-bottom: 30px}
-.font-link { border-radius: 4px;  margin-bottom: 40px; color: #fff; }
+.font-example { font-size: 38px; margin-top: 30px; margin-bottom: 25px}
+.font-link { border-radius: 4px;  margin-bottom: 30px; color: #fff; }
 .font-link:hover { background-color: #02A892}
 .font-link:hover a { color: #fff; }
-span.font-link { padding: 4px;}
+span.font-link { padding: 3px 6px;}
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
 .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
 .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, 
