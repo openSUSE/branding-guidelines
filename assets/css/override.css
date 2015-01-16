@@ -67,9 +67,9 @@ hr { border-color: #02A892;}
 .info-text { margin-top: 56px; line-height: 26px}
 .main-img { margin-bottom: 40px; margin-right: 20px}
 .element { margin-bottom: 40px;}
-.font-lead { font: 13.5px OpenSans-CondLight; color: #fff; margin-top: 20px }
-.font-example { font-size: 38px; margin-top: 30px; margin-bottom: 25px;}
-div.font-link { border-radius: 4px;  margin-bottom: 30px; color: #fff; padding:20px;}
+.font-lead { font: 13.5px OpenSans-CondLight; color: #fff; }
+.font-example { font-size: 38px; margin-top: 20px; margin-bottom: 10px;}
+div.font-link { border-radius: 4px;  margin-bottom: 10px; color: #fff; padding:10px;}
 .font-link:hover { background-color: #02A892}
 .font-link:hover a { color: #fff; }
 span.font-link { border-radius: 4px; padding: 3px 6px;}
