@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>openSUSE Development trifold inside</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;700&amp;display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 1123px; height: 794px; font-family: 'SUSE', sans-serif; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr))">
+<div style="background: #1d1410; color: #fff8ee; padding: 36px 30px; display: flex; flex-direction: column; gap: 14px; border-right: 1px dashed #4a3a30">
+<div style="height: 6px; background: linear-gradient(45deg, #17a88a, #20caa3)"></div>
+<div style="font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #20caa3">01 · Set up</div>
+<h2 style="margin: 0; font-size: 28px; line-height: 1.15">A dev box in minutes.</h2>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">sudo zypper in -t pattern devel_basis</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Compilers, make and the core build tools in one go.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">sudo zypper in git osc</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Version control plus the Build Service client.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">sudo zypper si -d &lt;pkg&gt;</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Install everything needed to build a package from source.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">distrobox create -i leap</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Test against stable Leap while you develop on Tumbleweed.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">zypper wp &lt;file&gt;</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Which package provides a missing header or library?</div></div>
+</div>
+<div style="background: #fff8ee; color: #2a1a12; padding: 36px 30px; display: flex; flex-direction: column; gap: 14px; border-right: 1px dashed #c9bfae">
+<div style="height: 6px; background: linear-gradient(45deg, #17a88a, #20caa3)"></div>
+<div style="font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #0f7a63">02 · Package</div>
+<h2 style="margin: 0; font-size: 28px; line-height: 1.15">Ship with the Build Service.</h2>
+<div><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">osc mkpac &lt;name&gt;</div><div style="font-size: 15px; line-height: 1.4">Create a new package in your home project.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">osc build</div><div style="font-size: 15px; line-height: 1.4">Build locally in a clean, reproducible root.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">osc commit -m "…"</div><div style="font-size: 15px; line-height: 1.4">Upload — OBS builds for every target you enabled.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">osc results</div><div style="font-size: 15px; line-height: 1.4">See build status per distro and architecture.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">osc buildlog &lt;repo&gt; &lt;arch&gt;</div><div style="font-size: 15px; line-height: 1.4">Read the full log when a build fails.</div></div>
+</div>
+<div style="background: #1d1410; color: #fff8ee; padding: 36px 30px; display: flex; flex-direction: column; gap: 14px">
+<div style="height: 6px; background: linear-gradient(45deg, #17a88a, #20caa3)"></div>
+<div style="font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #20caa3">03 · Contribute</div>
+<h2 style="margin: 0; font-size: 28px; line-height: 1.15">Get it into the distro.</h2>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">osc branch openSUSE:Factory &lt;pkg&gt;</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Fork a Tumbleweed package to improve it.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">osc vc</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Write the changelog entry reviewers expect.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">osc submitrequest</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Send it for review — openQA tests it before release.</div></div>
+<div><div style="font-family: monospace; font-size: 14px; color: #20caa3">osc rq list -M</div><div style="font-size: 15px; line-height: 1.4; color: #e8dccb">Track the requests you've sent.</div></div>
+<div style="margin-top: auto; border-top: 2px solid #20caa3; padding-top: 14px; font-size: 16px; line-height: 1.5; overflow-wrap: anywhere">Docs: <b>en.opensuse.org/openSUSE:Packaging_guidelines</b></div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1123,"height":794}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>
