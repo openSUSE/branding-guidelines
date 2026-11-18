@@ -129,6 +129,16 @@ section + section {
   border-top: 1px solid var(--line);
 }
 
+/* Section titles and lead paragraphs are centered throughout the guide;
+   card and swatch body copy stays left-aligned for readability. */
+section > .container > h2,
+section > .container > p:first-of-type {
+  text-align: center;
+}
+section > .container > p:first-of-type {
+  margin-inline: auto;
+}
+
 /* ============================================================
    Universe toolbar — copied from opensuse.github.io/request
    ============================================================ */
