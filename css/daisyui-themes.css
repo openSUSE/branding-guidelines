@@ -1,0 +1,171 @@
+/* ============================================
+   openSUSE Project Brand — DaisyUI themes
+   --------------------------------------------
+   Two themes: openSUSE-light and openSUSE-dark.
+
+   The @plugin blocks below are DaisyUI v5 theme definitions. Drop this file
+   into a Tailwind v4 + DaisyUI v5 project (after @import "tailwindcss" and
+   @plugin "daisyui") to register the themes.
+
+   The [data-theme] blocks are a plain-CSS mirror of the exact same tokens so
+   this no-build-step site can preview both themes in the Project Brand
+   samples without loading Tailwind at runtime.
+   ============================================ */
+
+/* ---------- DaisyUI v5 theme definitions ---------- */
+@plugin "daisyui/theme" {
+  name: "openSUSE-light";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #eef3f4;
+  --color-base-300: #c5cfd3;
+  --color-base-content: #0f2a35;
+
+  --color-primary: #42cd42;
+  --color-primary-content: #0b2a12;
+
+  --color-secondary: #0e7c6b;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #5b4fc4;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #173f4f;
+  --color-neutral-content: #fff8ee;
+
+  --color-info: #0077b6;
+  --color-info-content: #ffffff;
+
+  --color-success: #42cd42;
+  --color-success-content: #0b2a12;
+
+  --color-warning: #d4cb1b;
+  --color-warning-content: #0f2a35;
+
+  --color-error: #ff5b45;
+  --color-error-content: #0f2a35;
+
+  --color-link: #1b7f36;
+  --color-link-content: #ffffff;
+  --pb-muted: #516f7b; /* Slate: 5.37:1 on white, 4.80:1 on Mist */
+}
+
+@plugin "daisyui/theme" {
+  name: "openSUSE-dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #173f4f;
+  --color-base-200: #0f2a35;
+  --color-base-300: #516f7b;
+  --color-base-content: #fff8ee;
+
+  --color-primary: #42cd42;
+  --color-primary-content: #0b2a12;
+
+  --color-secondary: #20caa3;
+  --color-secondary-content: #0f2a35;
+
+  --color-accent: #5b4fc4;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #0f2a35;
+  --color-neutral-content: #fff8ee;
+
+  --color-info: #20caa3;
+  --color-info-content: #0f2a35;
+
+  --color-success: #42cd42;
+  --color-success-content: #0b2a12;
+
+  --color-warning: #d4cb1b;
+  --color-warning-content: #0f2a35;
+
+  --color-error: #ff5b45;
+  --color-error-content: #0f2a35;
+
+  --color-link: #20caa3;
+  --color-link-content: #0f2a35;
+  --pb-muted: #c5cfd3; /* Fog: legible on Pine and Ink */
+}
+
+/* ---------- Plain-CSS mirror (no build step required) ---------- */
+[data-theme="openSUSE-light"] {
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #eef3f4;
+  --color-base-300: #c5cfd3;
+  --color-base-content: #0f2a35;
+
+  --color-primary: #42cd42;
+  --color-primary-content: #0b2a12;
+
+  --color-secondary: #0e7c6b;
+  --color-secondary-content: #ffffff;
+
+  --color-accent: #5b4fc4;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #173f4f;
+  --color-neutral-content: #fff8ee;
+
+  --color-info: #0077b6;
+  --color-info-content: #ffffff;
+
+  --color-success: #42cd42;
+  --color-success-content: #0b2a12;
+
+  --color-warning: #d4cb1b;
+  --color-warning-content: #0f2a35;
+
+  --color-error: #ff5b45;
+  --color-error-content: #0f2a35;
+
+  --color-link: #1b7f36;
+  --color-link-content: #ffffff;
+  --pb-muted: #516f7b; /* Slate: 5.37:1 on white, 4.80:1 on Mist */
+  --os-link: var(--color-link);
+}
+
+[data-theme="openSUSE-dark"] {
+  color-scheme: dark;
+
+  --color-base-100: #173f4f;
+  --color-base-200: #0f2a35;
+  --color-base-300: #516f7b;
+  --color-base-content: #fff8ee;
+
+  --color-primary: #42cd42;
+  --color-primary-content: #0b2a12;
+
+  --color-secondary: #20caa3;
+  --color-secondary-content: #0f2a35;
+
+  --color-accent: #5b4fc4;
+  --color-accent-content: #ffffff;
+
+  --color-neutral: #0f2a35;
+  --color-neutral-content: #fff8ee;
+
+  --color-info: #20caa3;
+  --color-info-content: #0f2a35;
+
+  --color-success: #42cd42;
+  --color-success-content: #0b2a12;
+
+  --color-warning: #d4cb1b;
+  --color-warning-content: #0f2a35;
+
+  --color-error: #ff5b45;
+  --color-error-content: #0f2a35;
+
+  --color-link: #20caa3;
+  --color-link-content: #0f2a35;
+  --pb-muted: #c5cfd3; /* Fog: legible on Pine and Ink */
+  --os-link: var(--color-link);
+}

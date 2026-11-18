@@ -41,6 +41,37 @@ Each sub-project has its own signature color:
 
 Additional palette colors: Butterfly Blue (`#00c8ff`).
 
+## Project Brand
+
+The guide also documents the **project-level** identity — the openSUSE community/project itself,
+used for websites, events, docs, swag and slides. Products are the leaves; the project is the
+roots. Product Color DNA stays bright; the project palette uses deeper versions of the same hues
+anchored by heritage Pine (`#173F4F`). Geeko Green is the one bright color shared by both layers.
+
+### Reuse it on your own openSUSE-related site
+
+Link one stylesheet — no build step, no Tailwind or CDN runtime required:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@300;400;600&family=SUSE+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://douglasdemaio.github.io/opensuse-branding/css/project-brand.css">
+```
+
+`css/project-brand.css` is the drop-in layer: it `@import`s `css/daisyui-themes.css`, defines the
+`--os-*` custom properties, and ships reusable components. Use the generic `.os-hero`, `.os-card`,
+`.os-btn` and `.os-link` building blocks for everyday layouts, plus the `.pb-*` components
+(swatches, specimens, hero samples, logo surfaces) for brand-guide pages. DaisyUI themes are named
+`openSUSE-light` and `openSUSE-dark`; apply them with `data-theme="openSUSE-light"` or
+`data-theme="openSUSE-dark"`.
+
+```
+├── css/project-brand.css   # portable tokens + components (link this one)
+└── css/daisyui-themes.css  # bundled DaisyUI themes + plain-CSS mirror
+```
+
+Product sections, logos and Kalpa materials are unchanged. The guide's typeface is SUSE
+(SUSE Mono for code).
+
 ## Contributing
 
 Contributions are welcome! Whether it's fixing a typo, improving the design, adding new brand assets, or proposing changes to the guidelines — we'd love your help.
@@ -87,7 +118,7 @@ Contributions are welcome! Whether it's fixing a typo, improving the design, add
 
 ### Guidelines for Contributions
 
-- Keep the design consistent with the existing visual language (light/dark palette, shared openSUSE universe header, rounded cards, Inter font)
+- Keep the design consistent with the existing visual language (light/dark palette, shared openSUSE universe header, rounded cards, SUSE font)
 - Use the Color DNA palette — don't introduce arbitrary colors
 - SVG logos should use a `400×400` viewBox for consistency
 - Test your changes in at least one modern browser before submitting

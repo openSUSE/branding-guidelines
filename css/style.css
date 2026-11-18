@@ -83,7 +83,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: SUSE, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -103,7 +103,7 @@ button:focus-visible {
 
 /* --- Typography --- */
 h1, h2, h3, h4 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   color: var(--ink);
 }
@@ -199,6 +199,25 @@ section + section {
   color: var(--green-dark);
   border-bottom-color: var(--green);
 }
+/* Separates the project-level entry from the product-level entries. */
+.page-links .page-divider {
+  width: 1px;
+  align-self: stretch;
+  min-height: 22px;
+  margin: 11px 9px;
+  background: var(--line);
+  flex: none;
+}
+.page-links a[href="#project-brand"]::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--os-geeko);
+  vertical-align: 1px;
+}
 
 /* --- Hero --- */
 .hero {
@@ -212,21 +231,6 @@ section + section {
   margin-inline: auto;
   max-width: 56ch;
 }
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  margin-bottom: 1.5rem;
-  padding: .45rem 1.1rem;
-  background: var(--chip);
-  color: var(--green-dark);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: .85rem;
-  font-weight: 600;
-  letter-spacing: .03em;
-}
-
 /* Chameleon strip animation */
 .color-strip {
   display: flex;

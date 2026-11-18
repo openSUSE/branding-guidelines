@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', markActive, { passive: true });
   markActive();
 
-  // --- Copy hex on swatch click ---
-  document.querySelectorAll('.color-swatch').forEach(swatch => {
+  // --- Copy hex on swatch click (product DNA + project brand) ---
+  document.querySelectorAll('.color-swatch, .pb-swatch').forEach(swatch => {
     swatch.style.cursor = 'pointer';
     swatch.title = 'Click to copy hex';
     swatch.addEventListener('click', () => {
@@ -63,7 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navigator.clipboard.writeText(hex).then(() => {
         const original = code.textContent;
         code.textContent = 'Copied!';
-        setTimeout(() => { code.textContent = original; }, 1200);
+        swatch.classList.add('copied');
+        setTimeout(() => {
+          code.textContent = original;
+          swatch.classList.remove('copied');
+        }, 1200);
       });
     });
   });
