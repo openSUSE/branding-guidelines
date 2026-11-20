@@ -280,12 +280,17 @@ section > .container > p:first-of-type {
 }
 
 /* --- Logo Gallery --- */
+/* Flex keeps an incomplete last row centered instead of hugging the left edge.
+   The basis matches the old four-column width: (1140px - 3 × 1.5rem) / 4. */
 .logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
 }
 .logo-card {
+  flex: 0 0 calc((var(--max-w) - 4.5rem) / 4);
+  max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
