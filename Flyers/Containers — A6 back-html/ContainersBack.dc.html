@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>openSUSE Containers flyer back</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;700&amp;display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 397px; height: 559px; box-sizing: border-box; font-family: 'SUSE', sans-serif; background: #1d1410; color: #fff8ee; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px">
+<div style="height: 6px; background: linear-gradient(45deg, #7f6fe6, #a498ff)"></div>
+<div style="font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #a498ff">Container cheat sheet</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">podman run -d -p 8080:80 nginx</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Run a container rootless — no daemon needed.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">podman pull opensuse/tumbleweed</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Grab an official openSUSE base image.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">podman ps -a</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">See what's running — and what stopped.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">podman auto-update</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Pull new images and restart labelled containers.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">~/.config/containers/systemd/</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Drop Quadlet files here to run containers as services.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">sudo transactional-update pkg in htop</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Add a host package without breaking immutability.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">sudo transactional-update rollback</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">Return to the last known-good host state.</div></div>
+<div><div style="font-family: monospace; font-size: 13px; color: #a498ff">distrobox create -i tumbleweed</div><div style="font-size: 13px; line-height: 1.35; color: #e8dccb">A mutable toolbox on an immutable host.</div></div>
+</div>
+<div style="margin-top: auto; font-size: 16px; font-weight: 700">microos.opensuse.org</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":397,"height":559}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>

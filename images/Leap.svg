@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="400mm"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Leap.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.39108446"
+     inkscape:cx="879.6054"
+     inkscape:cy="565.09533"
+     inkscape:window-width="1920"
+     inkscape:window-height="1131"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 202.67364,60.555361 a 8.9318651,8.9318651 0 0 0 -5.89561,2.581634 L 98.538017,161.377 a 8.9318651,8.9318651 0 0 0 0,12.62835 l 98.240013,98.24001 a 8.9318651,8.9318651 0 0 0 12.62835,0 l 98.24001,-98.24001 a 8.9318651,8.9318651 0 0 0 0,-12.62835 L 209.40638,63.136995 a 8.9318651,8.9318651 0 0 0 -6.73321,-2.581634 z m 0.41867,21.524655 85.61173,85.611734 -85.61173,85.61173 -85.61174,-85.61173 z M 95.921337,221.27131 v 8.93089 a 8.9309127,8.9309127 0 0 0 2.61668,6.3144 l 98.240013,98.24002 a 8.9318651,8.9318651 0 0 0 12.62835,0 l 98.24001,-98.24002 a 8.9309127,8.9309127 0 0 0 2.61641,-6.3144 8.9309127,8.9309127 0 0 0 0,-0.41867 v -8.51222 h -8.93088 a 8.9309127,8.9309127 0 0 0 -6.31434,2.61648 l -91.92527,91.92534 -91.92528,-91.92527 a 8.9309127,8.9309127 0 0 0 -6.31454,-2.58164 v -0.0334 z"
+       color="#000000"
+       color-rendering="auto"
+       dominant-baseline="auto"
+       fill="#fbc75d"
+       image-rendering="auto"
+       shape-rendering="auto"
+       solid-color="#000000"
+       stop-color="#000000"
+       style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal;fill:#d4cb1b;fill-opacity:1;stroke-width:1.19078"
+       id="path1-2" />
+  </g>
+</svg>
