@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>openSUSE Server flyer back</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;700&amp;display=swap">
+<style>body{margin:0}</style>
+</helmet>
+<div style="width: 374px; height: 794px; box-sizing: border-box; font-family: 'SUSE', sans-serif; background: #fff8ee; color: #2a1a12; padding: 30px 26px; display: flex; flex-direction: column; gap: 14px">
+<div style="height: 6px; background: linear-gradient(45deg, #42cd42, #20caa3)"></div>
+<div style="font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #0f7a63">Admin cheat sheet</div>
+<h1 style="margin: 0; font-size: 32px; line-height: 1.08; font-weight: 700">Run it like a pro.</h1>
+<div style="display: flex; flex-direction: column; gap: 11px">
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">sudo zypper patch</div><div style="font-size: 14px; line-height: 1.35">Apply only official security and bug fixes.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">zypper lp</div><div style="font-size: 14px; line-height: 1.35">List pending patches before a maintenance window.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">zypper ps -s</div><div style="font-size: 14px; line-height: 1.35">Find services still running old libraries after updates.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">sudo systemctl enable --now cockpit.socket</div><div style="font-size: 14px; line-height: 1.35">Manage the box from your browser on port 9090.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">sudo firewall-cmd --list-all</div><div style="font-size: 14px; line-height: 1.35">Check exactly which ports are open.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">journalctl -p err -b</div><div style="font-size: 14px; line-height: 1.35">Show only errors since the last boot.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">sudo snapper create -d "pre-change"</div><div style="font-size: 14px; line-height: 1.35">Take a manual snapshot before risky work.</div></div>
+<div style="border-top: 1px solid #d8ccb8; padding-top: 8px"><div style="font-family: monospace; font-size: 14px; font-weight: 700; color: #0f7a63">sudo zypper --releasever=&lt;ver&gt; dup</div><div style="font-size: 14px; line-height: 1.35">Upgrade Leap to the next release in place.</div></div>
+</div>
+<div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; border-top: 2px solid #2a1a12; padding-top: 12px">
+<div style="font-size: 16px; font-weight: 700">doc.opensuse.org</div>
+<div style="font-size: 14px; color: #5a4436">Leap · MicroOS · Tumbleweed</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":374,"height":794}}'>
+class Component extends DCLogic { renderVals() { return {}; } }
+</script>
+</body>
+</html>
